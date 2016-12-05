@@ -6,8 +6,9 @@
 </head>
 <body>
 <div class="app" ng-controller="HelloController as helloController">
-    <input type="text" class="test" ng-model="helloController.inputField">
+    <input ng-click="helloController.update()" type="text" class="test" ng-model="helloController.inputField">
     {{helloController.inputField}}
+    <div>{{helloController.greeting}}</div>
 </div>
 </body>
 </html>
