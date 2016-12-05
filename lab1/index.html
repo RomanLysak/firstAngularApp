@@ -1,0 +1,13 @@
+<html ng-app="app">
+<head>
+    <title>Hello AngularJS</title>
+    <script src="js/angular.js"></script>
+    <script src="js/hello.js"></script>
+</head>
+<body>
+<div class="app" ng-controller="HelloController as helloController">
+    <input type="text" class="test" ng-model="helloController.inputField">
+    {{helloController.inputField}}
+</div>
+</body>
+</html>
